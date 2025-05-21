@@ -5,15 +5,14 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen
             name="(tabs)"
-            Options={{
+            options={{
               headerShown: false
         }} />
-        <Stack.Screen
-            name="movie"
-            Options={{
-              headerShown: false
-        }} />
-
+          <Stack.Screen
+              name="movie/[id]"
+              options={{
+                  headerShown: false
+              }} />
       </Stack>
   );
 }
